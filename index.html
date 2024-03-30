@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список користувачів</title>
+</head>
+<body>
+  <h1>Список користувачів</h1>
+  <script id="user-template" type="text/x-handlebars-template">
+    {{#each this}}
+      <div>
+        <h2>{{name}}</h2>
+        <p>Вік: {{age}}</p>
+        <p>Місто: {{city}}</p>
+      </div>
+    {{/each}}
+  </script>
+
+  <div id="output-template"></div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
